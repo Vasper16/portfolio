@@ -43,41 +43,27 @@ import {
 } from "react-icons/ai";
 
 import {
-  SiDjango,
   SiJavascript,
-  SiBootstrap,
   SiReact,
   SiTailwindcss,
-  SiGraphql,
   SiPython,
   SiCplusplus,
-  SiC,
-  SiRubyonrails,
-  SiJquery,
-  SiPostman,
-  SiGit,
-  SiMysql,
-  SiSolidity,
-  SiNetlify,
-  SiChartdotjs,
-  SiVite,
-  SiArduino,
-  SiWeb3Dotjs,
-  SiIpfs,
-  SiDotnet,
-  SiTwilio,
-  SiFlutter,
-  SiReplit,
-  SiFlask,
-  SiFigma,
-  SiGooglemaps,
-  SiOpenai,
-  SiGooglecloud,
-  SiNextdotjs,
-  SiTypescript,
-  SiClaude,
-  SiOracle,
+  SiMysql, // for SQL
+  SiTensorflow,
+  SiKeras,
+  SiMongodb,
+  SiPostgresql,
+  SiSupabase,
+  SiAmazonaws,
+  SiDocker,
+  SiGithubactions,
+  SiVercel,
+  SiExpress,
+  SiNodedotjs,
 } from "react-icons/si";
+
+import { AiFillGithub } from "react-icons/ai";
+import { BiLogoVisualStudio } from "react-icons/bi";
 
 import { FaHardHat, FaRust } from "react-icons/fa";
 
@@ -93,7 +79,8 @@ export const resumeLink =
   "https://drive.google.com/file/d/1vkxyMDB5_KpMwt4QXFgT2aqdRizr8Czh/view?usp=sharing";
 export const repoLink = "https://github.com/mittal-parth/personal-portfolio";
 
-export const callToAction = "https://www.linkedin.com/in/mittal-parth";
+export const callToAction =
+  "https://www.linkedin.com/in/jyotiraditya-tiwary-16jt/";
 
 export const navLinks = [
   {
@@ -129,11 +116,25 @@ export const navLinks = [
 // Add your past academic experiences here
 export const educationList = [
   {
+    id: "a-1",
+    // Use any existing icon from ../assets for now.
+    // If you later add a CodeChef logo to src/assets and export it,
+    // replace `icon` with that imported variable (e.g., codechef).
+    icon: icon,
+    event: "CodeChef Starters 202 (Rated)",
+    position: "Global Rank 558 · Div 3",
+    content1: "Highest rating: 1499 (+145), provisional",
+    content2:
+      "Recent activity visible on profile; 4 rated contests participated",
+    content3: "Daily Streak badge: 100/100 (profile)",
+    article: "https://www.codechef.com/users/tiny_idea_05", // your profile
+  },
+  {
     id: "education-1",
     icon: nitk,
-    title: "National Institute of Technology Karnataka, Surathkal",
+    title: "Birla Institute of Technology Mesra",
     degree: "Bachelor of Technology",
-    duration: "December 2020 - May 2024",
+    duration: "November 2022 - May 2026",
     content1: "Major: Electronics and Communication Engineering",
     content2: "Minor: Information Technology",
   },
@@ -165,97 +166,19 @@ export const achievements = [
       "https://www.youtube.com/live/qJ4OCtnvjUY?si=VkcnHEdwJTEEDlMg&t=4718",
   },
   {
-    id: "a-2",
-    icon: ethglobal,
-    event: "ETHIndia'22 | World's Largest Ethereum Hackathon",
-    position: "Winner",
-    content1: "Top 12 Winners among 20k+ registrations",
-    content2: "One of Polygon's Best Public Goods",
-    content3: "Best Module on Biconomy SDK",
-    article:
-      "https://www.thehindu.com/news/cities/Mangalore/nitk-iiit-delhi-team-makes-it-to-top-12-winners-in-ethindia-22/article66238923.ece",
-    project: "https://devfolio.co/projects/chargeswap-3527",
-    youtube: "https://youtu.be/9rieTya8Yds?t=3908",
-  },
-  {
-    id: "a-3",
-    icon: polkadot,
-    event: "Polkadot Hackathon: Europe Edition",
-    position: "2nd Runner Up in the ink! Smart Contract Category",
-    content1:
-      "Built GreenTrust offering a novel solution for obtaining certification in organic farming.",
-    content2: "",
-    content3: "",
-    article:
-      "https://www.linkedin.com/posts/mittal-parth_hackathon-winners-web3-activity-7048340759116214272-eJvo?utm_source=share&utm_medium=member_desktop&rcm=ACoAADOa76QB7zljgX8NK4xVSZXi0Z49ETMeC-g",
-    github: "https://github.com/pranav2305/GreenTrust",
-  },
-  {
-    id: "a-4",
-    icon: lightspeed,
-    event: "Warpspeed by Lightspeed",
-    position: "1st Runner Up",
-    content1: "1st Runner Up Overall by Lightspeed among 107 hackers",
-    content2: "Top 3 projects using Replit",
-    content3: "1st Runner Up by Amazon Web Services (AWS)",
-    article: "https://shorturl.at/fhjsT",
-  },
-  {
-    id: "a-5",
-    icon: globalAi,
-    event: "Global AI HackFest 2023",
-    position: "Winner",
-    content1:
-      "1st Position in the Education, Finance & Tech track by AI Planet",
-    content2: "",
-    content3: "",
-    article:
-      "https://www.linkedin.com/posts/mittal-parth_happy-to-share-that-comicifyai-emerged-as-activity-7078790186435833856-88fh",
-  },
-  {
-    id: "a-6",
-    icon: dennisivy,
-    event: "September Hackathon by Dennis Ivy",
-    position: "Winner",
-    content1:
-      "Rated the best portfolio website among 450+ participants across the globe.",
-    content2: "",
-    content3: "",
-    youtube: "https://www.youtube.com/watch?v=X2473En3h_o&t=5278s",
-    project: "https://parthmittal.netlify.app/",
-  },
-  {
-    id: "a-7",
-    icon: manipal,
-    event: "Manipal Hackathon'22",
-    position: "Consolation Prize",
-    content1: "Top 10 among 500+ teams across India",
-    content2:
-      "Developed a cross-platform mobile application to address the problem of social cohesion.",
-    content3: "",
-    article: "https://shorturl.at/exEIQ",
-  },
-  {
-    id: "a-8",
+    id: "a-1",
     icon: icon,
-    event: "ICON Hyperbuild Hackathon",
-    position: "Honorable Mention",
-    content1:
-      "Honorable Mention among 655 participants across the globe in a 3 month-long online hackathon.",
-    content2: "",
-    content3: "",
-    project: "https://devpost.com/software/green-trust-xj2w6g",
-  },
-  {
-    id: "a-9",
-    icon: ethforall,
-    event: "ETHForAll 2023",
-    position: "Top 3 Superfluid Projects",
-    content1:
-      "Bounty winners among 430 projects in ETHGlobal's largest online hackathon.",
-    content2: "",
-    content3: "",
-    project: "https://devfolio.co/projects/green-trust-ed14",
+    // Use any existing icon from ../assets for now.
+    // If you later add a CodeChef logo to src/assets and export it,
+    // replace `icon` with that imported variable (e.g., codechef).
+    icon: icon,
+    event: "CodeChef Starters 202 (Rated)",
+    position: "Global Rank 558 · Div 3",
+    content1: "Highest rating: 1499 (+145), provisional",
+    content2:
+      "Recent activity visible on profile; 4 rated contests participated",
+    content3: "Daily Streak badge: 100/100 (profile)",
+    article: "https://www.codechef.com/users/tiny_idea_05", // your profile
   },
 ];
 
@@ -264,161 +187,41 @@ export const skills = [
   {
     title: "Programming Languages",
     items: [
-      {
-        id: "pl-1",
-        icon: DiRuby,
-        name: "Ruby",
-      },
-      {
-        id: "pl-2",
-        icon: SiPython,
-        name: "Python",
-      },
-      {
-        id: "pl-3",
-        icon: SiCplusplus,
-        name: "C++",
-      },
-      {
-        id: "pl-4",
-        icon: FaGolang,
-        name: "Go",
-      },
-      {
-        id: "pl-5",
-        icon: FaRust,
-        name: "Rust",
-      },
-      {
-        id: "pl-6",
-        icon: DiJava,
-        name: "Java",
-      },
-      {
-        id: "pl-7",
-        icon: SiC,
-        name: "C",
-      },
-      {
-        id: "pl-8",
-        icon: AiFillHtml5,
-        name: "HTML",
-      },
-      {
-        id: "pl-9",
-        icon: DiCss3,
-        name: "CSS",
-      },
-      {
-        id: "pl-10",
-        icon: SiJavascript,
-        name: "JavaScript",
-      },
-      {
-        id: "pl-11",
-        icon: SiSolidity,
-        name: "Solidity",
-      },
+      { id: "pl-1", icon: SiPython, name: "Python" },
+      { id: "pl-2", icon: SiCplusplus, name: "C++" },
+      { id: "pl-3", icon: SiJavascript, name: "JavaScript (ES6+)" },
+      { id: "pl-4", icon: SiMysql, name: "SQL" },
     ],
   },
   {
-    title: "Frameworks/Libraries",
+    title: "Frameworks & Libraries",
     items: [
-      {
-        id: "f-1",
-        icon: SiDjango,
-        name: "Django",
-      },
-      {
-        id: "f-2",
-        icon: SiRubyonrails,
-        name: "Ruby on Rails",
-      },
-      {
-        id: "f-3",
-        icon: SiReact,
-        name: "ReactJS",
-      },
-      {
-        id: "f-4",
-        icon: SiBootstrap,
-        name: "Bootstrap",
-      },
-      {
-        id: "f-5",
-        icon: SiTailwindcss,
-        name: "Tailwind CSS",
-      },
-      {
-        id: "f-6",
-        icon: SiJquery,
-        name: "jQuery",
-      },
-      {
-        id: "f-7",
-        icon: SiGraphql,
-        name: "GraphQL",
-      },
-      {
-        id: "f-8",
-        icon: SiDotnet,
-        name: ".NET",
-      },
+      { id: "f-1", icon: SiReact, name: "React" },
+      { id: "f-2", icon: SiNodedotjs, name: "Node.js" },
+      { id: "f-3", icon: SiExpress, name: "Express.js" },
+      { id: "f-4", icon: SiTensorflow, name: "TensorFlow" },
+      { id: "f-5", icon: SiKeras, name: "Keras" },
+      { id: "f-6", icon: SiTailwindcss, name: "Tailwind CSS" },
     ],
   },
   {
-    title: "Tools",
+    title: "Databases & Cloud",
     items: [
-      {
-        id: "t-1",
-        icon: SiOracle,
-        name: "Oracle Cloud",
-      },
-      {
-        id: "t-1",
-        icon: VscAzure,
-        name: "Azure",
-      },
-      {
-        id: "t-2",
-        icon: SiMysql,
-        name: "MySQL",
-      },
-      {
-        id: "t-3",
-        icon: SiPostman,
-        name: "Postman",
-      },
-      {
-        id: "t-4",
-        icon: BiLogoVisualStudio,
-        name: "VS Code",
-      },
-      {
-        id: "t-5",
-        icon: SiGit,
-        name: "Git",
-      },
-      {
-        id: "t-6",
-        icon: AiFillGithub,
-        name: "GitHub",
-      },
-      {
-        id: "t-7",
-        icon: AiOutlineGitlab,
-        name: "Gitlab",
-      },
-      {
-        id: "t-8",
-        icon: SiNetlify,
-        name: "Netlify",
-      },
-      {
-        id: "t-9",
-        icon: SiVite,
-        name: "ViteJS",
-      },
+      { id: "d-1", icon: SiPostgresql, name: "PostgreSQL" },
+      { id: "d-2", icon: SiMongodb, name: "MongoDB" },
+      { id: "d-3", icon: SiSupabase, name: "Supabase" },
+      { id: "d-4", icon: SiAmazonaws, name: "AWS (EC2, S3)" },
+    ],
+  },
+  {
+    title: "DevOps & Tools",
+    items: [
+      { id: "t-1", icon: SiDocker, name: "Docker" },
+      { id: "t-2", icon: SiGithubactions, name: "GitHub Actions" },
+      { id: "t-3", icon: SiVercel, name: "Vercel" },
+      { id: "t-4", icon: SiGit, name: "Git" },
+      { id: "t-5", icon: AiFillGithub, name: "GitHub" },
+      { id: "t-6", icon: BiLogoVisualStudio, name: "VS Code" },
     ],
   },
 ];
@@ -826,7 +629,8 @@ export const projects = [
     github: "https://github.com/mittal-parth/personal-portfolio",
     link: "https://parthmittal.netlify.app/",
     image: portfolio,
-    content: "Open source developer portfolio template with modern UI/UX. 125+ stars on GitHub.",
+    content:
+      "Open source developer portfolio template with modern UI/UX. 125+ stars on GitHub.",
     stack: [
       {
         id: "icon-1",
@@ -1023,38 +827,38 @@ export const socialMedia = [
   {
     id: "social-media-1",
     icon: AiFillLinkedin,
-    link: "https://www.linkedin.com/in/mittal-parth",
+    link: "https://www.linkedin.com/in/jyotiraditya-tiwary-16jt/",
   },
   {
     id: "social-media-2",
     icon: AiFillGithub,
-    link: "https://www.github.com/mittal-parth",
+    link: "https://github.com/Vasper16",
   },
   {
     id: "social-media-3",
     icon: AiFillMail,
-    link: "mailto:mittalparth22@gmail.com",
+    link: "mailto:tiwaryjyotiraditya365@gmail.com",
   },
   {
     id: "social-media-4",
     icon: AiOutlineTwitter,
-    link: "https://www.twitter.com/mittalparth_",
+    link: "https://x.com/Jyotir_1602",
   },
   {
     id: "social-media-5",
     icon: AiFillInstagram,
-    link: "https://www.instagram.com/mittalparth_",
+    link: "https://www.instagram.com/_jyotiraditya_1602/",
   },
 ];
 
 // Your professional summary
 export const aboutMe = {
-  name: "Parth Mittal",
-  githubUsername: "mittal-parth",
+  name: "Jyotiraditya Tiwary",
+  githubUsername: "Vasper16",
   tagLine:
-    "MTS-1 @Oracle | ex-Tech Lead @IRIS,NITK | ETHIndia'22,24 Winner | 9x Hackathon Winner | NITK'24 | PBA-5",
+    "Final-year B.Tech ECE | AI/ML & Full-Stack | Placement Coordinator (BIT Mesra, 2025–26)",
   intro:
-    "Software Developer from India who is either busy improving his craft or pondering over the next big idea.",
+    "I build AI/ML systems and scalable web apps. Current work spans deep learning with Python/TensorFlow and full-stack React/Node projects. I focus on practical, production-minded solutions and clean UX.",
 };
 
 // The maximum number of PRs to be displayed in the Open Source Contributions section.
