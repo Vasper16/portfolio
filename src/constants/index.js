@@ -367,7 +367,7 @@ export const socialMedia = [
 
 // ---------------- ABOUT ----------------
 export const aboutMe = {
-  name: "Jyotiraditya Tiwary",
+  name: "Jyotiraditya",
   githubUsername: "Vasper16",
   tagLine: "B.Tech ECE (Final Year) | AI/ML & Full-Stack Developer | CodeChef 3★ (1615, Div 2)",
   intro: "Aspiring Software Developer skilled in C++ (DSA), full-stack web development, and AI/ML. Experienced in building scalable applications, competitive programming, and academic research with a strong foundation in computer science fundamentals.",

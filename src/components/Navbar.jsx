@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { close, parthmittal, menu } from "../assets";
+import { close, menu, jyotirLogo } from "../assets";  // ✅ import your logo
 import { navLinks } from "../constants";
 import { scrollToSection } from "../lib/helperFunctions";
 import { motion } from "framer-motion";
@@ -30,12 +30,12 @@ const Navbar = () => {
       transition={{ duration: 0.3, ease: "easeInOut" }}
       className="nav-styles sm:px-16 px-6"
     >
-      {/* Logo */}
-      <a href="#home">
+      {/* ✅ Logo Image instead of text */}
+      <a href="#home" className="flex items-center">
         <img
-          src={parthmittal}
-          alt="Parth Mittal"
-          className="w-[80px] h-[80px]"
+          src={jyotirLogo}
+          alt="Jyotir Logo"
+          className="w-[80px] h-[80px] object-contain"
         />
       </a>
 
@@ -57,15 +57,12 @@ const Navbar = () => {
         ))}
       </ul>
 
-      {/* only for mobile devices, created separately */}
+      {/* Mobile Menu */}
       <div className="sm:hidden flex flex-1 justify-end items-center">
-        {/* shows toggle icon based on its state */}
         <img
           src={toggle ? close : menu}
           alt="menu"
           className="w-[28px] h-[28px] object-contain"
-          // correct way to change state using the prev
-          // version of the same state using a callback function
           onClick={() => setToggle((prev) => !prev)}
         />
 

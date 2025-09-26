@@ -83,3 +83,4 @@ export {default as cp} from "./codechef-logo.jpeg"
 export { default as bit } from "./bit.png";
 export {default as classx} from "./classxlogo.png";
 export {default as classxii} from "./classxiilogo.png";
+export { default as jyotirLogo } from "./jyotir-logo.png";
