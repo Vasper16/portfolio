@@ -83,7 +83,7 @@ import { DiCss3, DiJava, DiMsqlServer, DiRuby } from "react-icons/di";
 import { VscAzure } from "react-icons/vsc";
 
 export const resumeLink =
-  "https://drive.google.com/file/d/1vkxyMDB5_KpMwt4QXFgT2aqdRizr8Czh/view?usp=sharing";
+  "https://drive.google.com/file/d/1VCZkVH_SElZj-SS0S0lXvRnzGCbgDJw4/view?usp=sharing";
 export const repoLink = "https://github.com/Vasper16";
 export const callToAction =
   "https://www.linkedin.com/in/jyotiraditya-tiwary-16jt/";
@@ -324,7 +324,7 @@ export const extraCurricular = [
     title: "Placement Coordinator (2025-26)",
     duration: "Feb 2025 - Present",
     content: [], // keep it as empty array
-    logo: bit,   // import bit logo in ../assets/index.js
+    logo: bit, // import bit logo in ../assets/index.js
   },
   {
     id: "ec-2",
@@ -332,7 +332,7 @@ export const extraCurricular = [
     title: "Athletics Contingent Captain",
     duration: "2023 - 2025",
     content: [], // keep it as empty array
-    logo: bit,   // reusing BIT logo unless you add a sports/athletics icon
+    logo: bit, // reusing BIT logo unless you add a sports/athletics icon
   },
 ];
 
@@ -369,8 +369,10 @@ export const socialMedia = [
 export const aboutMe = {
   name: "Jyotiraditya",
   githubUsername: "Vasper16",
-  tagLine: "B.Tech ECE (Final Year) | AI/ML & Full-Stack Developer | CodeChef 3★ (1615, Div 2)",
-  intro: "Aspiring Software Developer skilled in C++ (DSA), full-stack web development, and AI/ML. Experienced in building scalable applications, competitive programming, and academic research with a strong foundation in computer science fundamentals.",
+  tagLine:
+    "B.Tech ECE (Final Year) | AI/ML & Full-Stack Developer | CodeChef 3★ (1615, Div 2)",
+  intro:
+    "Aspiring Software Developer skilled in C++ (DSA), full-stack web development, and AI/ML. Experienced in building scalable applications, competitive programming, and academic research with a strong foundation in computer science fundamentals.",
 };
 
 // Open Source removed; keep inert exports so code doesn’t crash
