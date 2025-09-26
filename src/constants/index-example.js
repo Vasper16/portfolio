@@ -83,7 +83,7 @@ import { FaGolang } from "react-icons/fa6";
 
 import { DiCss3, DiJava, DiMsqlServer, DiRuby } from "react-icons/di";
 
-export const resumeLink = "";
+export const resumeLink = "/Jyotiraditya_Tiwary_Resume_2025.pdf";
 export const callToAction = "https://www.linkedin.com/in/<your-linkedin-id>/";
 export const repoLink = "https://github.com/mittal-parth/personal-portfolio";
 
