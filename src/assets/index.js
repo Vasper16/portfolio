@@ -75,3 +75,4 @@ export {
   polkadot_dev_cli,
   placeholder
 };
+export { default as iitp } from "./iitp.png";

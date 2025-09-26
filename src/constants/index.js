@@ -1,5 +1,6 @@
 import {
   nitk,
+  iitp,
   cluboard,
   cash_flow,
   gdsc,
@@ -32,7 +33,6 @@ import {
   polkadot_dev_cli,
 } from "../assets";
 
-// react-icons
 import {
   AiFillGithub,
   AiFillInstagram,
@@ -54,7 +54,7 @@ import {
   SiMongodb,
   SiPostgresql,
   SiSupabase,
-  SiAmazon,
+  SiAmazon, // valid AWS glyph
   SiDocker,
   SiGithubactions,
   SiVercel,
@@ -68,7 +68,7 @@ import {
   SiGit,
 } from "react-icons/si";
 
-// ✅ alias for AWS icon (react-icons has SiAmazon, not SiAmazonaws)
+// alias for templates that referenced SiAmazonaws
 const SiAmazonaws = SiAmazon;
 
 import { BiLogoVisualStudio } from "react-icons/bi";
@@ -80,32 +80,22 @@ import { VscAzure } from "react-icons/vsc";
 
 export const resumeLink =
   "https://drive.google.com/file/d/1vkxyMDB5_KpMwt4QXFgT2aqdRizr8Czh/view?usp=sharing";
-export const repoLink = "https://github.com/mittal-parth/personal-portfolio";
+export const repoLink = "https://github.com/Vasper16";
 export const callToAction =
   "https://www.linkedin.com/in/jyotiraditya-tiwary-16jt/";
 
+// Nav: removed Open Source + Extra Curricular as requested
 export const navLinks = [
   { id: "skills", title: "Skills & Experience" },
   { id: "education", title: "Education" },
   { id: "achievements", title: "Achievements" },
   { id: "projects", title: "Projects" },
-  { id: "openSource", title: "Open Source" },
-  { id: "extraCurricular", title: "Extra Curricular" },
   { id: "contactMe", title: "Contact Me" },
 ];
 
 // ---------------- EDUCATION ----------------
+// Only BIT Mesra + School
 export const educationList = [
-  {
-    id: "a-1",
-    icon: icon,
-    event: "CodeChef Starters 202 (Rated)",
-    position: "Global Rank 558 · Div 3",
-    content1: "Highest rating: 1499 (+145), provisional",
-    content2: "Recent activity visible on profile; 4 rated contests participated",
-    content3: "Daily Streak badge: 100/100 (profile)",
-    article: "https://www.codechef.com/users/tiny_idea_05",
-  },
   {
     id: "education-1",
     icon: nitk,
@@ -113,43 +103,29 @@ export const educationList = [
     degree: "Bachelor of Technology",
     duration: "November 2022 - May 2026",
     content1: "Major: Electronics and Communication Engineering",
-    content2: "Minor: Information Technology",
+    content2: "CGPA: 7.42/10 (till 6th semester)",
   },
   {
     id: "education-2",
-    icon: pba,
-    title: "Polkadot Blockchain Academy",
-    degree: "",
-    duration: "May 2024 - June 2024",
-    content1:
-      "Graduated with a distinction in the fifth cohort of the Polkadot Blockchain Academy at the National University of Singapore.",
+    icon: icon, // generic icon for school
+    title: "Holy Mission Secondary School",
+    degree: "Senior Secondary (Class XI–XII)",
+    duration: "May 2019 - June 2021",
+    content1: "Science stream.",
   },
 ];
 
 // ---------------- ACHIEVEMENTS ----------------
+// Keep only CodeChef; update text if you want later
 export const achievements = [
   {
-    id: "a-1",
-    icon: ethindia,
-    event: "ETHIndia'24 | India's Largest Ethereum Hackathon",
-    position: "Winner",
-    content1: "Top 10 Overall Finalists/Winners, True Network's Winner",
-    content2: "Polkadot's 1st Runner Up, Lit Protocol's 2nd Runner Up",
-    content3: "Coinbase Pool Prize, Base Top 10",
-    article:
-      "https://www.linkedin.com/posts/mittal-parth_super-stoked-to-announce-that-our-team-emerged-activity-7274735259621961729-tkq4?utm_source=share&utm_medium=member_desktop",
-    project: "https://devfolio.co/projects/khoj-3336",
-    youtube:
-      "https://www.youtube.com/live/qJ4OCtnvjUY?si=VkcnHEdwJTEEDlMg&t=4718",
-  },
-  {
-    id: "a-2",
-    icon: icon,
-    event: "CodeChef Starters 202 (Rated)",
-    position: "Global Rank 558 · Div 3",
-    content1: "Highest rating: 1499 (+145), provisional",
-    content2: "Recent activity visible on profile; 4 rated contests participated",
-    content3: "Daily Streak badge: 100/100 (profile)",
+    id: "a-cc",
+    icon: icon, // replace with CodeChef logo if you add it to assets
+    event: "CodeChef (Rated)",
+    position: "Global Rank 261 · Div 3",
+    content1: "Highest rating: 1615 (3-star)",
+    content2: "Active participant with multiple rated contests",
+    content3: "Daily Streak badge: 100/100",
     article: "https://www.codechef.com/users/tiny_idea_05",
   },
 ];
@@ -159,8 +135,8 @@ export const skills = [
   {
     title: "Programming Languages",
     items: [
-      { id: "pl-1", icon: SiPython, name: "Python" },
-      { id: "pl-2", icon: SiCplusplus, name: "C++" },
+      { id: "pl-1", icon: SiCplusplus, name: "C++" },
+      { id: "pl-2", icon: SiPython, name: "Python" },
       { id: "pl-3", icon: SiJavascript, name: "JavaScript (ES6+)" },
       { id: "pl-4", icon: SiMysql, name: "SQL" },
     ],
@@ -173,27 +149,38 @@ export const skills = [
       { id: "f-3", icon: SiExpress, name: "Express.js" },
       { id: "f-4", icon: SiTensorflow, name: "TensorFlow" },
       { id: "f-5", icon: SiKeras, name: "Keras" },
-      { id: "f-6", icon: SiTailwindcss, name: "Tailwind CSS" },
+      { id: "f-6", icon: SiTailwindcss, name: "REST APIs" },
     ],
   },
   {
-    title: "Databases & Cloud",
+    title: "Databases & Cloud Platforms",
     items: [
-      { id: "d-1", icon: SiPostgresql, name: "PostgreSQL" },
-      { id: "d-2", icon: SiMongodb, name: "MongoDB" },
+      { id: "d-1", icon: SiMongodb, name: "MongoDB" },
+      { id: "d-2", icon: SiPostgresql, name: "PostgreSQL" },
       { id: "d-3", icon: SiSupabase, name: "Supabase" },
-      { id: "d-4", icon: SiAmazonaws, name: "AWS (EC2, S3)" },
+      { id: "d-4", icon: SiAmazon, name: "AWS (EC2, S3)" },
+      { id: "d-5", icon: SiVercel, name: "Vercel" },
     ],
   },
   {
-    title: "DevOps & Tools",
+    title: "Developer Tools",
     items: [
-      { id: "t-1", icon: SiDocker, name: "Docker" },
-      { id: "t-2", icon: SiGithubactions, name: "GitHub Actions" },
-      { id: "t-3", icon: SiVercel, name: "Vercel" },
-      { id: "t-4", icon: SiGit, name: "Git" },
-      { id: "t-5", icon: AiFillGithub, name: "GitHub" },
-      { id: "t-6", icon: BiLogoVisualStudio, name: "VS Code" },
+      { id: "t-1", icon: SiGit, name: "Git" },
+      { id: "t-2", icon: SiGithubactions, name: "GitHub Actions (CI/CD)" },
+      { id: "t-3", icon: SiDocker, name: "Docker" },
+      { id: "t-4", icon: AiFillGithub, name: "GitHub" },
+      { id: "t-5", icon: BiLogoVisualStudio, name: "VS Code" },
+    ],
+  },
+  {
+    title: "Core Computer Science",
+    items: [
+      { id: "cs-1", icon: SiJavascript, name: "Data Structures & Algorithms" },
+      { id: "cs-2", icon: SiJavascript, name: "Object-Oriented Programming" },
+      { id: "cs-3", icon: SiMysql, name: "Database Management Systems" },
+      { id: "cs-4", icon: SiReact, name: "Operating Systems" },
+      { id: "cs-5", icon: SiNodedotjs, name: "Computer Networks" },
+      { id: "cs-6", icon: SiExpress, name: "System Design (LLD)" },
     ],
   },
 ];
@@ -201,27 +188,24 @@ export const skills = [
 // ---------------- EXPERIENCES ----------------
 export const experiences = [
   {
-    organisation: "",
-    logo: oracle,
-    link: "",
-    positions: [],
-  },
-  {
-    organisation: "",
-    logo: averlon,
-    link: "",
-    positions: [],
-  },
-  {
-    organisation: "",
-    logo: iris,
-    link: "",
-    positions: [],
+    organisation: "Indian Institute of Technology Patna",
+    logo: iitp, // make sure it's exported in assets/index.js
+    link: "https://www.iitp.ac.in/",
+    positions: [
+      {
+        title: "Research Intern",
+        duration: "May 2025 – July 2025",
+        content: [
+          "Worked on deep learning and signal processing projects with applications in GenAI and wireless communication.",
+        ],
+      },
+    ],
   },
 ];
 
 // ---------------- PROJECTS ----------------
-// keep structure, temporarily point images to portfolio
+// Using `portfolio` as a safe placeholder image.
+// Swap to real assets later by importing them from ../assets and replacing `image`.
 export const projects = [
   {
     id: "project-1",
@@ -229,8 +213,14 @@ export const projects = [
     github: "https://github.com/Vasper16/Deep_Vision_Image_Classifier",
     link: "",
     image: portfolio,
-    content: "End-to-end image classification pipeline.",
-    stack: [{ id: "p1-1", icon: SiPython, name: "Python" }],
+    content:
+      "End-to-end image classification pipeline with augmentation, transfer learning and exportable models.",
+    stack: [
+      { id: "p1-1", icon: SiPython, name: "Python" },
+      { id: "p1-2", icon: SiTensorflow, name: "TensorFlow" },
+      { id: "p1-3", icon: SiKeras, name: "Keras" },
+      { id: "p1-4", icon: SiOpencv, name: "OpenCV" },
+    ],
   },
   {
     id: "project-2",
@@ -238,10 +228,68 @@ export const projects = [
     github: "https://github.com/Vasper16/SmartConnect-6G",
     link: "",
     image: portfolio,
-    content: "SINR-aware Q-Learning framework.",
+    content:
+      "SINR-aware Q-Learning that optimizes Random Access for mMTC, reducing collisions and access delay.",
     stack: [{ id: "p2-1", icon: SiPython, name: "Python" }],
   },
-  // ... repeat same adjustment for other projects
+  {
+    id: "project-3",
+    title: "AI YouTube Automation",
+    github: "https://github.com/Vasper16/ai-youtube-automation",
+    link: "",
+    image: portfolio,
+    content:
+      "No/low-code pipeline that scripts, voices, composes and uploads videos using n8n, JSON2Video, TTS and Sheets.",
+    stack: [
+      { id: "p3-1", icon: SiNodedotjs, name: "Node.js" },
+      { id: "p3-2", icon: SiJavascript, name: "JavaScript" },
+      { id: "p3-3", icon: SiGooglecloud, name: "Google APIs" },
+    ],
+  },
+  {
+    id: "project-4",
+    title: "Learnify LMS (SaaS)",
+    github: "https://github.com/Vasper16/lms-saas-app",
+    link: "",
+    image: portfolio,
+    content:
+      "Full-stack LMS with auth, payments, course management and AI voice agent integration.",
+    stack: [
+      { id: "p4-1", icon: SiNextdotjs, name: "Next.js" },
+      { id: "p4-2", icon: SiSupabase, name: "Supabase" },
+      { id: "p4-3", icon: SiStripe, name: "Stripe" },
+      { id: "p4-4", icon: SiTailwindcss, name: "Tailwind CSS" },
+    ],
+  },
+  {
+    id: "project-5",
+    title: "BlogForgeAI",
+    github: "https://github.com/Vasper16/BlogForgeAI",
+    link: "",
+    image: portfolio,
+    content:
+      "AI-assisted blog platform with Markdown, tags, admin dashboard and LLM-powered generation.",
+    stack: [
+      { id: "p5-1", icon: SiReact, name: "React" },
+      { id: "p5-2", icon: SiExpress, name: "Express" },
+      { id: "p5-3", icon: SiMongodb, name: "MongoDB" },
+      { id: "p5-4", icon: SiTailwindcss, name: "Tailwind CSS" },
+    ],
+  },
+  {
+    id: "project-6",
+    title: "LLM ChatStream",
+    github: "https://github.com/Vasper16/LLM-ChatStream",
+    link: "",
+    image: portfolio,
+    content:
+      "Streamlit chatbot integrating Gemini API with PDF export and theme switching for rapid experiments.",
+    stack: [
+      { id: "p6-1", icon: SiPython, name: "Python" },
+      { id: "p6-2", icon: SiStreamlit, name: "Streamlit" },
+      { id: "p6-3", icon: SiGooglecloud, name: "Gemini API" },
+    ],
+  },
 ];
 
 // ---------------- STATS ----------------
@@ -252,33 +300,50 @@ export const stats = [
 ];
 
 // ---------------- EXTRA CURRICULAR ----------------
-export const extraCurricular = [
-  { id: 1, organisation: "", title: "", duration: "", content: [], logo: devfolio },
-  { id: 2, organisation: "", title: "", duration: "", content: [], logo: gdsc },
-  { id: 3, organisation: "", title: "", duration: "", content: [], logo: genesis },
-  { id: 4, organisation: "", title: "", duration: "", content: [], logo: iris },
-  { id: 5, organisation: "", title: "", duration: "", content: [], logo: ecell },
-];
+// Removed from nav; keep empty array so component doesn't crash if imported.
+export const extraCurricular = [];
 
 // ---------------- SOCIAL MEDIA ----------------
 export const socialMedia = [
-  { id: "social-media-1", icon: AiFillLinkedin, link: "https://www.linkedin.com/in/jyotiraditya-tiwary-16jt/" },
-  { id: "social-media-2", icon: AiFillGithub, link: "https://github.com/Vasper16" },
-  { id: "social-media-3", icon: AiFillMail, link: "mailto:tiwaryjyotiraditya365@gmail.com" },
-  { id: "social-media-4", icon: AiOutlineTwitter, link: "https://x.com/Jyotir_1602" },
-  { id: "social-media-5", icon: AiFillInstagram, link: "https://www.instagram.com/_jyotiraditya_1602/" },
+  {
+    id: "social-media-1",
+    icon: AiFillLinkedin,
+    link: "https://www.linkedin.com/in/jyotiraditya-tiwary-16jt/",
+  },
+  {
+    id: "social-media-2",
+    icon: AiFillGithub,
+    link: "https://github.com/Vasper16",
+  },
+  {
+    id: "social-media-3",
+    icon: AiFillMail,
+    link: "mailto:tiwaryjyotiraditya365@gmail.com",
+  },
+  {
+    id: "social-media-4",
+    icon: AiOutlineTwitter,
+    link: "https://x.com/Jyotir_1602",
+  },
+  {
+    id: "social-media-5",
+    icon: AiFillInstagram,
+    link: "https://www.instagram.com/_jyotiraditya_1602/",
+  },
 ];
 
 // ---------------- ABOUT ----------------
 export const aboutMe = {
   name: "Jyotiraditya Tiwary",
   githubUsername: "Vasper16",
-  tagLine: "Final-year B.Tech ECE | AI/ML & Full-Stack | Placement Coordinator (BIT Mesra, 2025–26)",
+  tagLine:
+    "Final-year B.Tech ECE | AI/ML & Full-Stack | Placement Coordinator (BIT Mesra, 2025–26)",
   intro: "I build AI/ML systems and scalable web apps.",
 };
 
-export const itemsToFetch = 20;
-export const includedRepos = ["publiclab/plots2", "zulip/zulip", "paritytech/polkadot-sdk"];
+// Open Source removed; keep inert exports so code doesn’t crash
+export const itemsToFetch = 0;
+export const includedRepos = [];
 
-// ✅ placeholder export for blogPosts
+// placeholder for blog posts
 export const blogPosts = [];
