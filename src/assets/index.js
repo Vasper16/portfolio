@@ -1,5 +1,8 @@
 import parthmittal from "./parth.svg";
-import profilePic from "./profile-pic.jpg";
+//import profilePic from "./profile-pic.jpg";
+import profilePic from "./jyotir-pic.jpeg";
+import classX from "./classxlogo.png";
+import classXII from "./classxiilogo.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import arrowUp from "./arrow-up.svg";
@@ -78,3 +81,5 @@ export {
 export { default as iitp } from "./iitp.png";
 export {default as cp} from "./codechef-logo.jpeg"
 export { default as bit } from "./bit.png";
+export {default as classx} from "./classxlogo.png";
+export {default as classxii} from "./classxiilogo.png";

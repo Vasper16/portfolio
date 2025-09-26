@@ -1,6 +1,8 @@
 import {
   cp,
   bit,
+  classx,
+  classxii,
   nitk,
   iitp,
   cluboard,
@@ -100,7 +102,7 @@ export const navLinks = [
 export const educationList = [
   {
     id: "education-1",
-    icon: nitk,
+    icon: bit,
     title: "Birla Institute of Technology Mesra",
     degree: "Bachelor of Technology",
     duration: "November 2022 - May 2026",
@@ -109,11 +111,20 @@ export const educationList = [
   },
   {
     id: "education-2",
-    icon: icon, // generic icon for school
+    icon: classxii, // generic icon for school
     title: "Holy Mission Secondary School",
-    degree: "Senior Secondary (Class XI–XII)",
+    degree: "Intermediate (Class XI–XII)",
     duration: "May 2019 - June 2021",
-    content1: "Science stream.",
+    content1: "Science Stream",
+    content2: "Percentage: 93.2%",
+  },
+  {
+    id: "education-2",
+    icon: classx, // generic icon for school
+    title: "St. Karen's High School",
+    degree: "Matriculation (Class X)",
+    duration: "May 2019",
+    content1: "Percentage: 92%",
   },
 ];
 
@@ -358,9 +369,8 @@ export const socialMedia = [
 export const aboutMe = {
   name: "Jyotiraditya Tiwary",
   githubUsername: "Vasper16",
-  tagLine:
-    "Final-year B.Tech ECE | AI/ML & Full-Stack | Placement Coordinator (BIT Mesra, 2025–26)",
-  intro: "I build AI/ML systems and scalable web apps.",
+  tagLine: "B.Tech ECE (Final Year) | AI/ML & Full-Stack Developer | CodeChef 3★ (1615, Div 2)",
+  intro: "Aspiring Software Developer skilled in C++ (DSA), full-stack web development, and AI/ML. Experienced in building scalable applications, competitive programming, and academic research with a strong foundation in computer science fundamentals.",
 };
 
 // Open Source removed; keep inert exports so code doesn’t crash
