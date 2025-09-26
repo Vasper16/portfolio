@@ -1,4 +1,6 @@
 import {
+  cp,
+  bit,
   nitk,
   iitp,
   cluboard,
@@ -120,7 +122,7 @@ export const educationList = [
 export const achievements = [
   {
     id: "a-cc",
-    icon: icon, // replace with CodeChef logo if you add it to assets
+    icon: cp, // replace with CodeChef logo if you add it to assets
     event: "CodeChef (Rated)",
     position: "Global Rank 261 · Div 3",
     content1: "Highest rating: 1615 (3-star)",
@@ -301,7 +303,27 @@ export const stats = [
 
 // ---------------- EXTRA CURRICULAR ----------------
 // Removed from nav; keep empty array so component doesn't crash if imported.
-export const extraCurricular = [];
+// ---------------- EXTRA CURRICULAR ----------------
+// ---------------- EXTRA CURRICULAR ----------------
+// ---------------- EXTRA CURRICULAR ----------------
+export const extraCurricular = [
+  {
+    id: "ec-1",
+    organisation: "Birla Institute of Technology, Mesra",
+    title: "Placement Coordinator (2025-26)",
+    duration: "Feb 2025 - Present",
+    content: [], // keep it as empty array
+    logo: bit,   // import bit logo in ../assets/index.js
+  },
+  {
+    id: "ec-2",
+    organisation: "Athletics & Sports, BIT Mesra",
+    title: "Athletics Contingent Captain",
+    duration: "2023 - 2025",
+    content: [], // keep it as empty array
+    logo: bit,   // reusing BIT logo unless you add a sports/athletics icon
+  },
+];
 
 // ---------------- SOCIAL MEDIA ----------------
 export const socialMedia = [
